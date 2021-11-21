@@ -44,7 +44,7 @@ void Costa::Dibujar_Kirby(Graphics^ g, Bitmap^ bmp) {
 
 	if (objK->getVidas() == 0)
 		esFin = true;
-	if (contador == 30) {
+	if (contador == 3) {
 		esFin = true;
 		esGanador = true;
 		Resumen(g);

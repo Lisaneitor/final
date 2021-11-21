@@ -120,6 +120,10 @@ bool Selva::Colision_PowerUp() {
 			// TODO: Examinar todo fuego
 			objK->setFuego(true);
 		}
+		//elimina si no lo agarraste
+		if (!resultado && arrFr.at(i)->getPow()) {
+			arrFr.at(i)->setEliminar(true);
+		}
 	}
 	return resultado;
 }
@@ -156,7 +160,7 @@ void Selva::Dibujar_Kirby(Graphics^ g, Bitmap^ bmp, Bitmap^ fire, Bitmap^ bala) 
 
 	if (objK->getVidas() == 0)
 		esFin = true;
-	if (contador == 50) {
+	if (contador == 10) {
 		esFin = true;
 		esGanador = true;
 	}

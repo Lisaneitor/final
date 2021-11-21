@@ -1,7 +1,7 @@
 #include "Juego.h"
 Juego::Juego() {
 	// Test de nivel selva
-	nivel = 2;
+	nivel = 3;
 	time_init_app = time(0);
 	contador = 0;
 	nvCosta = new Costa();

@@ -160,7 +160,7 @@ void Selva::Dibujar_Kirby(Graphics^ g, Bitmap^ bmp, Bitmap^ fire, Bitmap^ bala) 
 
 	if (objK->getVidas() == 0)
 		esFin = true;
-	if (contador == 10) {
+	if (contador == 50) {
 		esFin = true;
 		esGanador = true;
 	}

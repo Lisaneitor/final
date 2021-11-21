@@ -98,7 +98,7 @@ void Sierra::Dibujar_Kirby(Graphics^ g, Bitmap^ bmp, Bitmap^ bmpCong) {
 
 	if (objK->getVidas() == 0)
 		esFin = true;
-	if (contador == 3) {
+	if (contador == 30) {
 		esFin = true;
 		esGanador = true;
 		Resumen(g);
